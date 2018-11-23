@@ -23,3 +23,7 @@ QMAKE_LFLAGS += -static-libgcc -static-libstdc++
 В разборке с зависимостями очень помогла программа Dependency Walker 2.2 http://www.dependencywalker.com/.
 
 Осталась зависимость только от библиотеки libusb.
+
+
+
+thanks bro! I fixed it by running this command: " sudo apt-get install libusb -1.0-0-dev libusb-dev".
