@@ -8,17 +8,17 @@
 # Этот Makefile протестирован на Mac OS X, Linux и Windows.
 
 # Используйте следующие 3 строки на Unix (расскомментируйте для рабочего окружения Mac OS X):
-#USBFLAGS = `libusb-config --cflags`
-#USBLIBS = `libusb-config --libs`
-#EXE_SUFFIX =
+USBFLAGS = `libusb-config --cflags`
+USBLIBS = `libusb-config --libs`
+EXE_SUFFIX =
 
 # Используйте следующие 3 строки на Windows и закомментируйте 3 предыдущие. Вы можете 
 #  изменить пути include для соответствия месту установки libusb-win32
 #USBFLAGS = -I/usr/local/include
-USBFLAGS = -I"c:/Program Files/LibUSB-Win32/include"
+#USBFLAGS = -I"c:/Program Files/LibUSB-Win32/include"
 #USBLIBS = -L/usr/local/lib -lusb
-USBLIBS = -L"c:/Program Files/LibUSB-Win32/lib/gcc" -lusb
-EXE_SUFFIX = .exe 
+#USBLIBS = -L"c:/Program Files/LibUSB-Win32/lib/gcc" -lusb
+#EXE_SUFFIX = .exe 
 
 DO= set count
 
